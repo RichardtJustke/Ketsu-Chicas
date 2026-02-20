@@ -1,8 +1,17 @@
+import { Link } from 'react-router-dom'
 import logoFooter from '../../pages/Home/assets/images/logo-footer.png'
 
 const Footer = () => {
-  const menuEmpresa = ['Sobre', 'Cases']
-  const menuServicos = ['Buffet', 'Audiovisual', 'RH', 'Cerimonial']
+  const menuEmpresa = [
+    { label: 'Sobre', path: '/sobre' },
+    { label: 'Cases', path: '/cases' }
+  ]
+  const menuServicos = [
+    { label: 'Buffet', path: '/servicos/buffet' },
+    { label: 'Audiovisual', path: '/servicos/audiovisual' },
+    { label: 'RH', path: '/servicos/rh' },
+    { label: 'Cerimonial', path: '/servicos/cerimonial' }
+  ]
 
   return (
     <footer className="w-full flex justify-center py-[100px]">
@@ -11,7 +20,9 @@ const Footer = () => {
         <div className="grid grid-cols-[1fr_auto_auto_auto] gap-[60px]">
           {/* Logo Column */}
           <div className="flex flex-col gap-5">
-            <img src={logoFooter} alt="Chicas Eventos" className="w-[105px] h-[65px] object-contain" />
+            <Link to="/">
+              <img src={logoFooter} alt="Chicas Eventos" className="w-[105px] h-[65px] object-contain" />
+            </Link>
             <p className="font-manrope text-[18px] leading-[1.5] text-dove-gray max-w-[400px]">
               Transformamos cada evento em uma experiência exclusiva conduzida com profissionalismo, excelência e dedicação em cada detalhe.
             </p>
@@ -22,9 +33,9 @@ const Footer = () => {
             <span className="font-manrope text-[18px] text-shark py-2">Empresa</span>
             <div className="flex flex-col gap-2">
               {menuEmpresa.map((item) => (
-                <a key={item} href="#" className="font-manrope text-[16px] text-dove-gray hover:text-shark transition-colors">
-                  {item}
-                </a>
+                <Link key={item.path} to={item.path} className="font-manrope text-[16px] text-dove-gray hover:text-shark transition-colors">
+                  {item.label}
+                </Link>
               ))}
             </div>
           </div>
@@ -34,9 +45,9 @@ const Footer = () => {
             <span className="font-manrope text-[18px] text-shark py-2">Serviços</span>
             <div className="flex flex-col gap-2">
               {menuServicos.map((item) => (
-                <a key={item} href="#" className="font-manrope text-[16px] text-dove-gray hover:text-shark transition-colors">
-                  {item}
-                </a>
+                <Link key={item.path} to={item.path} className="font-manrope text-[16px] text-dove-gray hover:text-shark transition-colors">
+                  {item.label}
+                </Link>
               ))}
             </div>
           </div>
