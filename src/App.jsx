@@ -7,6 +7,7 @@ import Cerimonial from './pages/Cerimonial/Cerimonial'
 import TeamOperational from './pages/TeamOperational/TeamOperational'
 import Audiovisual from './pages/Audiovisual/Audiovisual'
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails'
+import Cart from './pages/Cart/Cart'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/servicos/equipe-operacional" element={<TeamOperational />} />
         <Route path="/servicos/audiovisual" element={<Audiovisual />} />
         <Route path="/servicos/detalhes/:serviceId" element={<ServiceDetails />} />
+        <Route path="/carrinho" element={<Cart />} />
       </Routes>
     </Router>
   )
