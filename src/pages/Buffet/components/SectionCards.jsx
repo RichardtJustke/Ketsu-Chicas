@@ -9,21 +9,21 @@ const cards = [
     title: 'Coquetel',
     badge: 'New',
     image: cardCoquetel,
-    link: '/servicos/buffet/coquetel'
+    link: '/servicos/detalhes/buffet-coquetel'
   },
   {
     id: 2,
     title: 'Coffee Break',
     badge: 'Popular',
     image: cardCoffeeBreak,
-    link: '/servicos/buffet/coffee-break'
+    link: '/servicos/detalhes/buffet-coffee-break'
   },
   {
     id: 3,
     title: 'Brunch',
     badge: 'New',
     image: cardBrunch,
-    link: '/servicos/buffet/brunch'
+    link: '/servicos/detalhes/buffet-brunch'
   }
 ]
 

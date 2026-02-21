@@ -10,24 +10,28 @@ const cards = [
     title: 'Fotografia',
     description: 'Cobertura completa do evento',
     image: fotografiaImg,
+    link: '/servicos/detalhes/audiovisual-fotografia',
   },
   {
     id: 2,
     title: 'Video',
     description: 'Filmagem e edição profissional',
     image: videoImg,
+    link: '/servicos/detalhes/audiovisual-video',
   },
   {
     id: 3,
     title: 'Drone',
     description: 'Imagens aéreas espetaculares',
     image: droneImg,
+    link: '/servicos/detalhes/audiovisual-drone',
   },
   {
     id: 4,
     title: 'Storymaker',
     description: 'Conteúdo para redes sociais',
     image: storymakerImg,
+    link: '/servicos/detalhes/audiovisual-storymaker',
   },
 ]
 
@@ -145,7 +149,10 @@ const Card = ({ card }) => {
             </div>
             
             {/* Saiba mais Button */}
-            <button className="flex flex-row justify-center items-center bg-crusta rounded-[999px] py-[10px] px-6">
+            <Link 
+              to={card.link}
+              className="flex flex-row justify-center items-center bg-crusta rounded-[999px] py-[10px] px-6"
+            >
               <div className="flex flex-col">
                 <div className="flex flex-col">
                   <span className="font-manrope font-normal text-[14px] leading-[1.5em] tracking-[0.04em] text-white">
@@ -153,7 +160,7 @@ const Card = ({ card }) => {
                   </span>
                 </div>
               </div>
-            </button>
+            </Link>
           </div>
           
           {/* Row 2: Description */}
