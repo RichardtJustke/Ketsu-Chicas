@@ -8,6 +8,7 @@ import TeamOperational from './pages/TeamOperational/TeamOperational'
 import Audiovisual from './pages/Audiovisual/Audiovisual'
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails'
 import Cart from './pages/Cart/Cart'
+import { Login, SignUp } from './pages/Auth'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/servicos/audiovisual" element={<Audiovisual />} />
         <Route path="/servicos/detalhes/:serviceId" element={<ServiceDetails />} />
         <Route path="/carrinho" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/criar-conta" element={<SignUp />} />
       </Routes>
     </Router>
   )

@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import Navbar from '../../shared/components/Navbar'
 import SectionHero from './components/SectionHero'
 import SectionContent from './components/SectionContent'
 import SectionRelated from './components/SectionRelated'
@@ -12,7 +13,8 @@ const ServiceDetails = () => {
   // Se o serviço não existir, mostrar mensagem
   if (!service) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-alabaster">
+        <Navbar />
         <div className="text-center">
           <h1 className="font-manrope text-[48px] text-shark mb-4">
             Serviço não encontrado
@@ -43,6 +45,8 @@ const ServiceDetails = () => {
 
   return (
     <main className="w-full min-h-screen bg-alabaster">
+      <Navbar />
+      
       {/* Hero Banner */}
       <SectionHero heroImage={service.heroImage} />
       

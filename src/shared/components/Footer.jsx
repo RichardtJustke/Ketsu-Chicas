@@ -9,7 +9,7 @@ const Footer = () => {
   const menuServicos = [
     { label: 'Buffet', path: '/servicos/buffet' },
     { label: 'Audiovisual', path: '/servicos/audiovisual' },
-    { label: 'RH', path: '/servicos/rh' },
+    { label: 'Equipe Operacional', path: '/servicos/equipe-operacional' },
     { label: 'Cerimonial', path: '/servicos/cerimonial' }
   ]
 

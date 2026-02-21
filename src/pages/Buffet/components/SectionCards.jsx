@@ -97,7 +97,7 @@ const SectionCards = () => {
         {/* Ver pacotes Button */}
         <div className="flex flex-col">
           <Link 
-            to="/servicos/buffet/pacotes"
+            to="/servicos/buffet"
             className="flex flex-row justify-center items-center bg-black rounded-[99px] py-2 px-5"
           >
             <span className="font-manrope font-normal text-[16px] leading-[1.5em] text-center text-white">

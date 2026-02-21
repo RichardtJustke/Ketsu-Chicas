@@ -46,10 +46,7 @@ const Cart = () => {
 
   return (
     <div className="w-full min-h-screen bg-alabaster overflow-x-hidden">
-      {/* Navbar Fixed */}
-      <div className="fixed top-0 left-0 right-0 z-50 px-5 pt-5">
-        <Navbar />
-      </div>
+      <Navbar />
 
       <main className="bg-alabaster">
         {/* Hero Section */}
@@ -90,7 +87,7 @@ const Cart = () => {
           {/* Back Button */}
           <div className="max-w-[1736px] mx-auto px-5 mb-[33px]">
             <Link 
-              to="/servicos"
+              to="/"
               className="inline-flex flex-row items-center gap-2 rounded-[13.5px]"
             >
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">

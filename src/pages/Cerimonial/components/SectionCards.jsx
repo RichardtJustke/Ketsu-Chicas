@@ -108,7 +108,7 @@ const SectionCards = () => {
         <div className="flex flex-row items-center gap-[351.95px] w-[1304px]">
           {/* Back Button */}
           <Link 
-            to="/servicos"
+            to="/"
             className="flex flex-row justify-center items-center p-[5px]"
           >
             <div className="flex flex-row justify-center items-center gap-[10px] p-1 rounded-[99px]">

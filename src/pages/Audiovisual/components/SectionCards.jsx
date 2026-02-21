@@ -43,7 +43,7 @@ const SectionCards = () => {
         <div className="w-full flex flex-row items-center">
           {/* Back Link */}
           <Link 
-            to="/servicos"
+            to="/"
             className="flex flex-row justify-center items-center p-[5px] rounded-[99px]"
           >
             <div className="flex flex-row justify-center items-center gap-[10px] p-1 rounded-[99px]">
@@ -100,7 +100,7 @@ const SectionCards = () => {
           {/* Ver Pacotes Button */}
           <div className="flex flex-col">
             <Link 
-              to="/servicos"
+              to="/servicos/audiovisual"
               className="flex flex-row justify-center items-center bg-black rounded-[99px] py-2 px-5"
             >
               <div className="flex flex-col">
